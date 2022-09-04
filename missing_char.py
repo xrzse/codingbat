@@ -8,3 +8,8 @@ missing_char('kitten', 0) → 'itten'
 missing_char('kitten', 4) → 'kittn'
 '''
 
+def missing_char(str, n):
+  front = str[:n]
+  back = str[n + 1:]
+  return front + back
+  
